@@ -36,7 +36,7 @@ A simple and powerful **command-line tool** to help e-commerce business owners a
 1. **Clone the repository** or download the script:
 
    ```bash
-   git clone https://github.com/kenneth-apeh/ebs-calculator.git
+   git clone https://github.com/apehkenneth/ebs-calculator.git
    cd ebs-calculator
    ```
 
