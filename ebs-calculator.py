@@ -29,29 +29,52 @@ def main():
     # Taxes
     tax_rate_percent = float(input("Tax rate (%): "))
 
+    
+    
+    
+    
     # --- Calculations ---
-    total_revenue = selling_price * units_sold
 
-    total_platform_fee = (platform_fee_percent / 100) * selling_price
-    total_transaction_fee = transaction_fee_flat + (transaction_fee_percent / 100) * selling_price
+    # Total revenue from sales
+    total_revenue = selling_price * units_sold 
 
+    # Platform fee based on selling price
+    total_platform_fee = (platform_fee_percent / 100) * selling_price 
+
+    # Transaction fee includes flat fee and percentage of selling price
+    total_transaction_fee = transaction_fee_flat + (transaction_fee_percent / 100) * selling_price 
+
+    # Total cost per unit includes all variable costs
     total_cost_per_unit = (
         unit_cost + shipping_cost_per_unit + total_platform_fee + total_transaction_fee + variable_costs
-    )
+    ) 
 
-    total_cost = (total_cost_per_unit * units_sold) + fixed_costs + ad_cost_total
+    # Total cost includes variable costs, fixed costs, and ad costs
+    total_cost = (total_cost_per_unit * units_sold) + fixed_costs + ad_cost_total 
 
-    tax_amount = (tax_rate_percent / 100) * total_revenue
+    # Calculate tax based on total revenue
+    tax_amount = (tax_rate_percent / 100) * total_revenue 
+
+    # Net profit is total revenue minus total costs and tax
     net_profit = total_revenue - total_cost - tax_amount
 
-    gross_profit = total_revenue - (unit_cost + shipping_cost_per_unit) * units_sold
+    # Gross profit calculation
+    gross_profit = total_revenue - (unit_cost + shipping_cost_per_unit) * units_sold 
 
-    profit_margin = (net_profit / total_revenue) * 100 if total_revenue else 0
+    # Calculate profit margin
+    profit_margin = (net_profit / total_revenue) * 100 if total_revenue else 0 
+
+    # Break-even analysis
     break_even_units = (
         fixed_costs / (selling_price - total_cost_per_unit) if (selling_price - total_cost_per_unit) > 0 else float('inf')
     )
+
+    # ROI  calculations
     roi = (net_profit / (ad_cost_total + fixed_costs)) * 100 if (ad_cost_total + fixed_costs) else 0
+
+    # ROAS (Return on Ad Spend) calculation
     roas = total_revenue / ad_cost_total if ad_cost_total else 0
+
 
     # --- Output Summary ---
     print("\nEBS Report:")
@@ -63,6 +86,7 @@ def main():
     print(f"Break-Even Units: {break_even_units:.2f}")
     print(f"ROI: {roi:.2f}%")
     print(f"ROAS: {roas:.2f}")
+    
 
 if __name__ == "__main__":
     main()

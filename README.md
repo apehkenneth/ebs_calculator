@@ -103,7 +103,6 @@ ROI: 109.80%
 ROAS: 20.00
 ```
 
-
 ## 🧾 Variables Used
 
 | Variable                  | Description                                      |
@@ -121,11 +120,8 @@ ROAS: 20.00
 | `tax_rate_percent`        | Tax rate applied to revenue                      |
 | `revenue`                 | Total revenue from sales                         |
 | `total_cost`              | Total cost of goods sold, shipping, and fees     |
-| `net_profit`              | Net profit after tax                              |
+| `net_profit`              | Net profit after tax                             |
 | `profit_margin`           | Profit margin as a percentage                    |
 | `break_even_units`        | Break-even point in units sold                   |
-| `roi`                    | Return on investment (ROI)                       |
-| `roas`                   | Return on ad spend (ROAS)                       |
-
-
-
+| `roi`                     | Return on investment (ROI)                       |
+| `roas`                    | Return on ad spend (ROAS)                        |
