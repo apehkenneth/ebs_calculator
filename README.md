@@ -1,6 +1,6 @@
 # 📦 EBS Calculator (Ecommerce Business Success Calculator)
 
-![EBS Calculator]("EBS Calculator.png")
+![EBS Calculator](EBS-Calculator.png)
 
 For my Code in Place final project, I created **EBS Calculator**, a simple yet powerful command-line tool designed to support small e-commerce business owners by helping them analyze product profitability, calculate return on investment (ROI), and determine their break-even point—all through a clean, interactive CLI interface. As someone interested in both tech and entrepreneurship, I wanted to build something that merges the two: a tool that addresses a real-world problem for solopreneurs and online sellers who often lack access to complex analytics platforms but still need clear, actionable financial insights. **EBS Calculator** fills that gap with a no-frills, accessible solution.
 
