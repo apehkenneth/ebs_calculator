@@ -3,9 +3,13 @@
 # The output includes total revenue, costs, net profit, profit margin, break-even units, ROI, and ROAS.
 # The script is designed to help ecommerce entrepreneurs assess their business performance and make informed decisions.
 
-
+from pyfiglet import Figlet
 def main():
-    print("Ecommerce Business Success (EBS) Calculator\n")
+    fig = Figlet(font='doom')
+    print(fig.renderText('EBS Calculator'))
+    print("Your CLI companion for smart e-commerce decisions.\n")
+    print("By: Kenneth Apeh\n")
+  
 
     # Product & Cost Inputs
     product_name = input("Enter product name: ")
@@ -29,7 +33,6 @@ def main():
     # Taxes
     tax_rate_percent = float(input("Tax rate (%): "))
 
-    
     
     
     

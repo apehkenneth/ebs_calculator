@@ -1,6 +1,8 @@
+![EBS Calculator](EBS_Calculator.png)
+
 # 📦 EBS Calculator (Ecommerce Business Success Calculator)
 
-A simple and powerful **command-line tool** to help e-commerce business owners analyze profitability, track ROI, and determine their break-even point.
+For my Code in Place final project, I created **EBS Calculator**, a simple yet powerful command-line tool designed to support small e-commerce business owners by helping them analyze product profitability, calculate return on investment (ROI), and determine their break-even point—all through a clean, interactive CLI interface. As someone interested in both tech and entrepreneurship, I wanted to build something that merges the two: a tool that addresses a real-world problem for solopreneurs and online sellers who often lack access to complex analytics platforms but still need clear, actionable financial insights. **EBS Calculator** fills that gap with a no-frills, accessible solution.
 
 ---
 
@@ -41,6 +43,7 @@ A simple and powerful **command-line tool** to help e-commerce business owners a
    ```
 
 2. **Run the script** using Python:
+
    ```bash
    python ebs_calculator.py
    ```
